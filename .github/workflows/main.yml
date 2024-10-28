@@ -26,8 +26,8 @@ jobs:
         run: cd simple-api
       - name: list files
       
-        run: ls -R
+        run: ls 
 
       # Build and test with Maven
       - name: Build and test with Maven
-        run: mvn clean verify
+        run: mvn -f simple-api/pom.xml clean verify
