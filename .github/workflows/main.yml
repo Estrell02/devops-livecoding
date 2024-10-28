@@ -24,6 +24,8 @@ jobs:
           distribution: 'adopt'
       - name: Change Directory
         run: cd simple-api
+      - name: list files
+      
         run: ls -R
 
       # Build and test with Maven
