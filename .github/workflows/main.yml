@@ -50,6 +50,7 @@ jobs:
           context: ./database
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tp-devops-simple-database:latest
           push: true
+          
 
       - name: Build image and push httpd
         uses: docker/build-push-action@v3
