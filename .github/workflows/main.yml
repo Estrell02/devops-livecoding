@@ -11,6 +11,10 @@ jobs:
     steps:
       # Checkout your GitHub code using actions/checkout@v3
       - uses: actions/checkout@v3
+      - name: Install Maven
+        run: |
+          sudo apt update
+          sudo apt install -y maven
 
       # Set up JDK 17
       - name: Set up JDK 17
@@ -20,6 +24,7 @@ jobs:
           distribution: 'adopt'
       - name: Change Directory
         run: cd simple-api
+        run: ls -R
 
       # Build and test with Maven
       - name: Build and test with Maven
