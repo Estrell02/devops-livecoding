@@ -53,7 +53,7 @@ public class Department {
         }
 
         public Builder name(String name) {
-            this.name = mname;
+            this.name = name;
             return this;
         }
 
